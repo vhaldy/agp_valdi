@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title></title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<style type="text/css">
+
+body { font-family: Helvetica, san-serif; }
+H1 { 
+	color: black; 
+}
+a:link { 
+	color:purple; 
+}
+
+.main,
+.sidebar { 
+	display:block; 
+	width:100%;
+}
+
+@media all and (min-width: 36em){
+	.main { 
+		float: left;
+		width:60%; 
+	}
+	.sidebar { 
+		float: left; 
+		width:40%;
+	}
+}
+
+@media all and (min-width: 50em){
+	.main { 
+		width:70%;
+	}
+	.sidebar { 
+		width:30%; 
+	}
+
+	H1 { color: black; font-size:1.2em }
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>  
+</head> 
+<body>
+<div data-role="page" id="index" data-quicklinks="true">
+    <div data-role="header" data-theme="a" data-position="fixed">
+		<a href="" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-right ui-icon-back">Back</a>
+        <h1>About me</h1>
+    </div>
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+		<div class="ui-grid-solo">
+			<div class="ui-block-a">
+				<p>
+					<center>
+						Nama : Moh. Fadli <br>
+						NIM : 5520114070 <br>
+						Kelas : T2.III
+					</center>
+				</p>
+			</div>
+		</div>
+		<div class="ui-grid-solo">
+			<div class="ui-block-a">
+				<center>
+					<img src="css/images/about.png">
+				</center>
+			</div>
+		</div>
+    </div>
+
+    <div data-role="footer" data-theme="a" data-position="fixed">
+    	<h1>Copyright &copy; By: Fadli</h1>
+    </div>
+
+</div>
+</body>
+</html>
